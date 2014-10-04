@@ -1,0 +1,1 @@
+module("example tests"),test("HTML5 Boilerplate is sweet",function(){expect(1),equals("boilerplate".replace("boilerplate","sweet"),"sweet","Yes. HTML5 Boilerplate is, in fact, sweet")}),test("Environment is good",function(){expect(2),ok(!!window.MBP,"Mobile Boilder Plate helper is present"),notEqual(window.MBP.ua,null,"we have a user agent. winning, duh.")});
