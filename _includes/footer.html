@@ -1,0 +1,25 @@
+<!-- footer -->
+<br><br><br><br>
+<div class="bottom clearfix">
+	{% if site.data.social.twitter %}
+	<a href="//twitter.com/{{ site.data.social.twitter }}" target="_blank"><strong>Twitter</strong></a>
+	{% endif %}
+	{% if site.data.social.github %}
+	<a href="//github.com/{{ site.data.social.github }}" target="_blank"><strong>Github</strong></a>
+	{% endif %}
+	{% if site.data.social.facebook %}
+	<a href="//facebook.com/{{ site.data.social.facebook }}" target="_blank"><strong>Facebook</strong></a>
+	{% endif %}
+	{% if site.data.social.reddit %}
+	<a href="//reddit.com/u/{{ site.data.social.reddit }}" target="_blank"><strong>Reddit</strong></a>
+	{% endif %}
+	{% if site.data.social.email %}
+	<a href="mailto:{{ site.data.social.email }}" target="_blank"><strong>Email</strong></a>
+	{% endif %}
+	{% if site.data.social.phone %}
+	<a href="tel:{{ site.data.social.phone }}" target="_blank"><strong>Call</strong></a>
+	{% endif %}
+	<span class="right">
+		<a href="//jm-design.github.io" target="_blank"><strong>jm | Design</strong></a>
+	</span>
+</div>

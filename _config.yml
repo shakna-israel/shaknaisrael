@@ -1,0 +1,23 @@
+# Jekyll configuration
+
+name: Shakna Israel
+author: James Milne
+description: These are the worlds that lie within the mind
+
+# url is currently only used only for the RSS feed in feed.xml
+url: http://shaknaisrael.com
+
+# baseurl will often be '', but for a project page on gh-pages, it needs to
+# be the project name.
+# *** IMPORTANT: If your local "jekyll serve" throws errors change this to '' or
+#     run it like so: jekyll serve --baseurl=''
+baseurl: ''
+
+permalink: /:title
+
+highlighter: pygments
+markdown: redcarpet
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+
+exclude: ['README.md', 'LICENSE']

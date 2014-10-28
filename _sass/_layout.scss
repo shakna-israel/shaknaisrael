@@ -1,0 +1,121 @@
+/* Smartphones (both landscape and portrait) ----------- */
+@media only screen
+and (min-device-width : 320px) and (max-device-width : 480px) {
+  .only-mobile {
+    display:block;
+  }
+
+  .no-mobile {
+    display:none;
+  }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px) {
+  .only-mobile {
+    display:block;
+  }
+
+  .only-mobile img {
+    width:80%;
+  }
+
+  .no-mobile {
+    display:none;
+  }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+  .only-mobile {
+    display:block;
+  }
+
+  .only-mobile img {
+    width:100%;
+  }
+
+  .no-mobile {
+    display:none;
+  }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+  .only-mobile {
+    display:none;
+  }
+
+  .no-mobile {
+    display:block;
+  }
+}
+
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+  .only-mobile {
+    display:none;
+  }
+
+  .no-mobile {
+    display:block;
+  }
+}
+
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+  .only-mobile {
+    display:none;
+  }
+
+  .no-mobile {
+    display:block;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+  .only-mobile {
+    display:none;
+  }
+
+  .no-mobile {
+    display:block;
+  }
+}
+
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+  .only-mobile {
+    display:none;
+  }
+
+  .no-mobile {
+    display:block;
+  }
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+  .only-mobile {
+    display:none;
+  }
+
+  .no-mobile {
+    display:none;
+  }
+}

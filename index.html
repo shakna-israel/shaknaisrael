@@ -1,0 +1,53 @@
+---
+layout: default
+---
+<div class="wrapper no-mobile">
+<ul id="sb-slider" class="sb-slider">
+  {% for page in site.posts reversed %}
+	<li>
+		<a href="{{ page.permalink }}"><img class="front-cover" src="{{ baseurl }}/assets/img/covers/{{ page.image }}" alt="{{ page.title }}"/></a>
+    <div class="sb-description">
+      {% if page.published %}
+      <a href="{{ page.permalink }}">
+			     <h3>{{ page.title }}</h3>
+           <p>{{ page.description }}</p>
+      </a>
+      {% else %}
+      <a href="{{ page.permalink }}">
+        <h3>Coming Soon: {{ page.title }}</h3>
+      </a>
+      {% endif %}
+		</div>
+	</li>
+  {% endfor %}
+</ul>
+
+<div id="shadow" class="shadow"></div>
+
+<div id="nav-arrows" class="nav-arrows">
+	<a href="#">Next</a>
+	<a href="#">Previous</a>
+</div>
+</div><!-- /wrapper -->
+
+<div class="wrapper only-mobile">
+  <ul>
+    {% for page in site.posts reversed %}
+    <li>
+      <a href="{{ page.permalink }}"><img src="{{ baseurl }}/assets/img/covers/{{ page.image }}" alt="{{ page.title }}"/></a>
+      <div class="sb-description">
+        {% if page.published %}
+        <a href="{{ page.permalink }}">
+             <h3>{{ page.title }}</h3>
+             <p>{{ page.description }}</p>
+        </a>
+        {% else %}
+        <a href="{{ page.permalink }}">
+          <h3>Coming Soon: {{ page.title }}</h3>
+        </a>
+        {% endif %}
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</div>

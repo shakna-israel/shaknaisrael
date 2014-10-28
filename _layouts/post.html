@@ -1,0 +1,73 @@
+{% include header.html %}
+{% include head.html %}
+
+<img class="bg" src="{{ site.baseurl }}/assets/img/profile.png" />
+
+<div class="wrapper">
+<h2>{{ page.title }}</h2>
+<div class="post-cover">
+<img src="{{ site.baseurl }}/assets/img/covers/{{ page.image }}" alt="{{ page.title }}"/>
+</div>
+<p class="book-description">
+  {% if page.prequel %}
+  <a href="{{ site.baseurl }}/{{ page.prequel }}">Proceeded by {{ page.prequel-title }}</a>
+  <br><br>
+  {% endif %}
+  {{ page.description }}
+  {% if page.sequel %}
+  <br><br>
+  <a href="{{ site.baseurl }}/{{ page.sequel }}">Followed by {{ page.sequel-title }}</a>
+  {% endif %}
+</p>
+<br><br>
+{% if page.wattpad %}
+<div class="store-link">
+<a href="http://www.wattpad.com/story/{{ page.wattpad }}" target="_blank">
+  <img class="book-icon" src="{{ site.baseurl }}/assets/img/stores/wattpad.png" alt="Wattpad" />
+  {% if page.wattpad %}
+  <p class="book-icon">$0</p>
+  {% endif %}
+</a>
+</div>
+{% endif %}
+<br>
+
+{% if page.kobo %}
+<div class="store-link">
+<a href="http://store.kobobooks.com/en-US/ebook/{{ page.kobo }}" target="_blank">
+  <img class="book-icon" src="{{ site.baseurl }}/assets/img/stores/kobo.png" alt="Kobo" />
+  {% if page.kobo-cost %}
+  <p class="book-icon">${{ page.kobo-cost }}</p>
+  {% endif %}
+</a>
+</div>
+{% endif %}
+<br>
+
+{% if page.kindle %}
+<div class="store-link">
+<a href="https://www.amazon.com/dp/{{ page.kindle }}" target="_blank">
+  <img class="book-icon" src="{{ site.baseurl }}/assets/img/stores/kindle.png" alt="Kindle" />
+  {% if page.kindle-cost %}
+  <p class="book-icon">${{ page.kindle-cost }}</p>
+  {% endif %}
+</a>
+</div>
+{% endif %}
+<br>
+
+{% if page.lulu %}
+<div class="store-link">
+<a href="http://www.lulu.com/shop/{{ page.lulu }}" target="_blank">
+  <img class="book-icon" src="{{ site.baseurl }}/assets/img/stores/lulu.png" alt="Lulu" />
+  {% if page.lulu %}
+  <p class="book-icon">${{ page.lulu-cost }}</p>
+  {% endif %}
+</a>
+</div>
+{% endif %}
+<br>
+</div>
+
+{% include scripts.html %}
+{% include footer.html %}
