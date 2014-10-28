@@ -89,7 +89,7 @@ h1 span, h5 {
 	background: rgba(255, 255, 255, 0.8);
 	text-transform: uppercase;
 	z-index: 9999;
-	position: absolute;
+	position: fixed;
 	top:0px;
 	width:100%;
 	font-family: Arial, sans-serif;
@@ -282,4 +282,23 @@ p.book-icon {
 	border-radius: 15px;
 	-moz-border-radius: 15px;
 	-webkit-border-radius: 15px;
+}
+
+.only-mobile li{
+	list-style-type: none;
+}
+
+.only-mobile li img {
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	@media only screen and (max-width : 320px) {
+		width: 90%;
+	}
+	@media only screen and (min-width : 321px) {
+		width: 60%;
+	}
+	@media only screen and (min-device-width : 768px) {
+		width: 50%;
+	}
 }
