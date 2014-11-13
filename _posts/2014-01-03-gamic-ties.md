@@ -1,7 +1,7 @@
 ---
 permalink: gamic-ties
 published: true
-image: gties.jpg
+cover: gties.jpg
 title: Gamic Ties
 layout: post
 lulu: james-milne/gamic-ties/paperback/product-20308889.html

@@ -1,7 +1,8 @@
 ---
 permalink: heart-of-madness
 published: true
-image: HeartOfMadness.jpg
+cover: HeartOfMadness.jpg
+backcover: HeartOfMadness.jpg
 title: Heart Of Madness
 layout: post
 description: >

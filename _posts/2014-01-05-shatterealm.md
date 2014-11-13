@@ -1,7 +1,7 @@
 ---
 permalink: shatterealm
 published: true
-image: shatterealm.jpg
+cover: shatterealm.jpg
 title: The Shatterealm
 layout: post
 description: >

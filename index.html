@@ -4,8 +4,9 @@ layout: default
 <div class="wrapper no-mobile">
 <ul id="sb-slider" class="sb-slider">
   {% for page in site.posts reversed %}
+  {% if page.published %}
 	<li>
-		<a href="{{ page.permalink }}"><img class="front-cover" src="{{ baseurl }}/assets/img/covers/{{ page.image }}" alt="{{ page.title }}"/></a>
+		<a href="{{ page.permalink }}"><img class="front-cover" src="{{ baseurl }}/assets/img/covers/{{ page.cover }}" alt="{{ page.title }}"/></a>
     <div class="sb-description">
       {% if page.published %}
       <a href="{{ page.permalink }}">
@@ -19,6 +20,7 @@ layout: default
       {% endif %}
 		</div>
 	</li>
+  {% endif %}
   {% endfor %}
 </ul>
 
@@ -34,8 +36,8 @@ layout: default
   <ul>
     {% for page in site.posts reversed %}
     <li>
-      <a href="{{ page.permalink }}"><img src="{{ baseurl }}/assets/img/covers/{{ page.image }}" alt="{{ page.title }}"/></a>
-      <div class="sb-description">
+      <a href="{{ page.permalink }}"><img src="{{ baseurl }}/assets/img/covers/{{ page.cover }}" alt="{{ page.title }}"/></a>
+      <div class="book-description">
         {% if page.published %}
         <a href="{{ page.permalink }}">
              <h3>{{ page.title }}</h3>

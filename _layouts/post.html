@@ -5,10 +5,52 @@
 
 <div class="wrapper">
 <h2>{{ page.title }}</h2>
-<div class="post-cover">
-<img src="{{ site.baseurl }}/assets/img/covers/{{ page.image }}" alt="{{ page.title }}"/>
+
+<div class="wrapper no-mobile">
+<ul id="sb-slider" class="sb-slider">
+  {% if page.cover %}
+  <li>
+    <img class="front-cover" src="{{ baseurl }}/assets/img/covers/{{ page.cover }}" alt="{{ page.title }}"/>
+    <div class="sb-description">
+      {% if page.published %}
+           <h3>{{ page.title }}</h3>
+           <p>{{ page.description }}</p>
+      {% else %}
+        <h3>Coming Soon: {{ page.title }}</h3>
+      {% endif %}
+    </div>
+  </li>
+  {% endif %}
+  {% if page.backcover %}
+  <li>
+    <img class="front-cover" src="{{ baseurl }}/assets/img/backcovers/{{ page.backcover }}" alt="{{ page.title }}"/>
+    <div class="sb-description">
+      {% if page.published %}
+           <h3>{{ page.title }}</h3>
+           <p>{{ page.description }}</p>
+      {% else %}
+        <h3>Coming Soon: {{ page.title }}</h3>
+      {% endif %}
+    </div>
+  </li>
+  {% endif %}
+</ul>
+
+<div id="shadow" class="shadow"></div>
+
+<div id="nav-arrows" class="nav-arrows">
+  <a href="#">Next</a>
+  <a href="#">Previous</a>
 </div>
-<p class="book-description">
+</div><!-- /wrapper -->
+
+<div class="wrapper only-mobile">
+<div class="post-cover">
+<img src="/assets/img/covers/{{ page.cover }}" alt="{{ page.title }}"/>
+</div>
+</div>
+
+<p class="book-description only-mobile">
   {% if page.prequel %}
   <a href="{{ site.baseurl }}/{{ page.prequel }}">Proceeded by {{ page.prequel-title }}</a>
   <br><br>

@@ -1,7 +1,7 @@
 ---
 permalink: unit-army-day-of-black-sun
 published: true
-image: uadobs.jpg
+cover: uadobs.jpg
 title: UnitArmy - Day of Black Sun
 layout: post
 description: >

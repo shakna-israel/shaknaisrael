@@ -1,7 +1,7 @@
 ---
 permalink: gamic-throes
 published: true
-image: gthroes.jpg
+cover: gthroes.jpg
 title: Gamic Throes
 layout: post
 kindle: B004V50XXY
