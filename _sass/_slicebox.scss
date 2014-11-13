@@ -34,8 +34,8 @@
 	right: -10px;
 	z-index: 1000;
 	position: absolute;
-	background: #9f9f9f;
-	background: rgba(159,159,159, 0.6);
+	background: $sb-background;
+	background: $sb-background-alpha;
 	border-left: 4px solid rgba(255,255,255,0.7);
 	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 	filter: alpha(opacity=0);

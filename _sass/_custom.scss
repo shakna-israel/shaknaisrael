@@ -253,7 +253,8 @@ p.book-icon {
 }
 
 .book-description {
-	background: rgba(0, 0, 0, 0.6);
+	background: $sb-background;
+	background: $sb-background-alpha;
 	box-shadow: 1px 0px 2px rgba(255, 255, 255, 0.2);
 	color:#fff;
 	padding:1rem;
