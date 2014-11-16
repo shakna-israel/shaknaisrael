@@ -55,7 +55,12 @@
   <a href="{{ site.baseurl }}/{{ page.prequel }}">Proceeded by {{ page.prequel-title }}</a>
   <br><br>
   {% endif %}
+  {% if page.released %}
   {{ page.description }}
+  {% else %}
+  Coming Soon: {{ page.title }}<br><br>
+  {{ page.description }}
+  {% endif %}
   {% if page.sequel %}
   <br><br>
   <a href="{{ site.baseurl }}/{{ page.sequel }}">Followed by {{ page.sequel-title }}</a>

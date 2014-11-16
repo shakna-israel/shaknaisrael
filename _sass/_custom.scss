@@ -28,14 +28,28 @@ img.bg {
   position: fixed;
   top: 0;
   left: 0;
+
+	@media only screen and (max-width : 479px) {
+	display:none;
+	}
+
+	@media screen and (max-width: $background-width) { /* Specific to this particular image */
+		left: 50%;
+		margin-left: ($background-width/2)*-1;   /* 50% */
+	}
+
 }
 
-@media screen and (max-width: $background-width) { /* Specific to this particular image */
-  img.bg {
-    left: 50%;
-    margin-left: ($background-width/2)*-1;   /* 50% */
-  }
+img.bg-m {
+	@extend img.bg;
+	@media only screen and (max-width : 479px) {
+	display:block;
+	}
+	@media only screen and (min-width : 480px) {
+	display:none;
+	}
 }
+
 
 /* General Demo Style */
 body {
@@ -61,6 +75,16 @@ h1, h2, h5 {
 	text-align: center;
 	font-weight: 700;
 	text-shadow: 1px 1px 3px #e0d1bc;
+	@media only screen and (max-width : 479px) {
+	font-size: 1.5rem !important;
+	}
+	@media only screen and (min-width:480px) and (max-width : 768px) {
+	font-size: 2rem !important;
+	}
+	@media only screen and (min-width:769px) and (max-width : 1024px) {
+	font-size: 2.5rem !important;
+	}
+
 }
 
 h1 span, h5 {
@@ -277,6 +301,15 @@ p.book-icon {
 	border-radius: 15px;
 	-moz-border-radius: 15px;
 	-webkit-border-radius: 15px;
+	@media only screen and (max-width : 479px) {
+	width:100% !important;
+	}
+	@media only screen and (min-width:480px) and (max-width : 768px) {
+	width:60% !important;
+	}
+	@media only screen and (min-width:769px) and (max-width : 1024px) {
+	width:40% !important;
+	}
 }
 
 .front-cover {
