@@ -1,8 +1,8 @@
 ---
 permalink: necromancers-apprentice
 released: false
-cover: NecromancersApprentice.png
-backcover: NecromancersApprentice.png
+cover: NecromancersApprentice.jpg
+backcover: NecromancersApprentice.jpg
 title: Necromancer's Apprentice
 layout: post
 description: >
