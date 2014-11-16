@@ -32,7 +32,7 @@ layout: default
 
 <div class="wrapper only-mobile">
   <ul>
-    {% for page in site.posts reversed %}
+    {% for page in site.posts %}
     <li>
       <a href="{{ page.permalink }}"><img src="{{ baseurl }}/assets/img/covers/{{ page.cover }}" alt="{{ page.title }}"/></a>
       <div class="book-description">
