@@ -1,6 +1,6 @@
 ---
 permalink: shatterealm
-published: true
+released: true
 cover: shatterealm.jpg
 title: The Shatterealm
 layout: post

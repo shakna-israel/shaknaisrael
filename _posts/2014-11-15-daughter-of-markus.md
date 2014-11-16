@@ -1,6 +1,6 @@
 ---
 permalink: heart-of-madness
-published: true
+released: true
 cover: HeartOfMadness.jpg
 backcover: HeartOfMadness.jpg
 title: Heart Of Madness

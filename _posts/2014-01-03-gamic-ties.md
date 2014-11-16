@@ -1,6 +1,6 @@
 ---
 permalink: gamic-ties
-published: true
+released: true
 cover: gties.jpg
 title: Gamic Ties
 layout: post

@@ -1,6 +1,6 @@
 ---
 permalink: unit-army-doomsday-device
-published: true
+released: true
 cover: uadd.jpg
 title: UnitArmy - Doomsday Device
 layout: post

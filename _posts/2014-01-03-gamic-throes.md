@@ -1,6 +1,6 @@
 ---
 permalink: gamic-throes
-published: true
+released: true
 cover: gthroes.jpg
 title: Gamic Throes
 layout: post
