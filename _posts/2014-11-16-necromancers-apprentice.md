@@ -11,4 +11,6 @@ description: >
   It was rebuilt by blood.
   
   <a href="https://shakna-israel.github.io/NecromancersApprentice" target="_blank">Read Online</a>
+kobo: Necromancers-Apprentice-Part-One
+kobo-cost:0 
 ---
